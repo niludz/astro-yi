@@ -1,16 +1,16 @@
-import {defineConfig} from 'astro/config';
+import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import solid from '@astrojs/solid-js';
-import {remarkModifiedTime} from "./src/remarkPlugin/remark-modified-time.mjs";
-import {resetRemark} from "./src/remarkPlugin/reset-remark.js";
+import { remarkModifiedTime } from "./src/remarkPlugin/remark-modified-time.mjs";
+import { resetRemark } from "./src/remarkPlugin/reset-remark.js";
 
 import expressiveCode from "astro-expressive-code";
-import {pluginLineNumbers} from '@expressive-code/plugin-line-numbers'
+import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 
-import {visit} from 'unist-util-visit'
-import {pluginCollapsibleSections} from '@expressive-code/plugin-collapsible-sections'
+import { visit } from 'unist-util-visit'
+import { pluginCollapsibleSections } from '@expressive-code/plugin-collapsible-sections'
 
 function customRehypeLazyLoadImage() {
   return function (tree) {
@@ -24,7 +24,7 @@ function customRehypeLazyLoadImage() {
 }
 
 export default defineConfig({
-  site: 'https://astro-yi-nu.vercel.app',
+  site: 'https://niludz.netlify.app/',
   integrations: [sitemap(), tailwind(), solid(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
     themes: ["github-dark", "github-light"],

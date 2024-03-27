@@ -16,16 +16,16 @@
  * beian {string} Chinese policy
  */
 export const site = {
-  title: 'Astro Theme Yi', // required
-  favicon: '/favicon.svg', // required
+  title: 'Nero Bag - 尼禄袋子', // required
+  favicon: '/tombstone.png', // required
   description: 'Welcome to my independent blog website! ',
-  author: "Astro-Yi", // required
+  author: "niludz", // required
   avatar: '/avatar.png', // required
-  motto: 'Actions speak louder than words.',
-  url: 'https://astro-yi-nu.vercel.app',
+  motto: '哎呀，手机端还没适配啊！',
+  url: 'phttps://niludz.netlify.app',
   recentBlogSize: 5,
   archivePageSize: 25,
-  postPageSize: 10,
+  postPageSize: 5,
   feedPageSize: 20,
   beian: '',
 }
@@ -37,9 +37,9 @@ export const site = {
  * ga {string|false}
  */
 export const config = {
-  busuanzi: false,
+  busuanzi: true,
   lang: 'en', // en | zh-cn
-  codeFoldingStartLines: 16 , // Need to re-run the project to take effect
+  codeFoldingStartLines: 16, // Need to re-run the project to take effect
   ga: false // If you want to integrate with Google Analytics, just enter your GA-ID here.
 }
 
@@ -51,49 +51,64 @@ export const config = {
  * target {string} optional "_self|_blank" open in current window / open in new window
  */
 export const categories = [
+  // {
+  //   name: "Blog",
+  //   iconClass: "ri-draft-line",
+  //   href: "/blog/1",
+  // },
+  // {
+  //   name: "Feed",
+  //   iconClass: "ri-lightbulb-flash-line",
+  //   href: "/feed/1",
+  // },
+  // {
+  //   name: "Archive",
+  //   iconClass: "ri-archive-line",
+  //   href: "/archive/1",
+  // },
+  // {
+  //   name: "Message",
+  //   iconClass: "ri-chat-1-line",
+  //   href: "/message",
+  // },
+  // {
+  //   name: "Search",
+  //   iconClass: "ri-search-line",
+  //   href: "/search",
+  // },
+  // {
+  //   name: "More",
+  //   iconClass: "ri-more-fill",
+  //   href: "javascript:void(0);",
+  //   children: [
+  //     {
+  //       name: 'About',
+  //       iconClass: 'ri-information-line',
+  //       href: '/about',
+  //     },
+  //     {
+  //       name: 'Friends',
+  //       iconClass: 'ri-user-5-line',
+  //       href: '/friends',
+  //       target: '_self',
+  //     },
+  //   ]
+  // }
   {
-    name: "Blog",
-    iconClass: "ri-draft-line",
-    href: "/blog/1",
+    icon: 'ri-twitter-x-fill',
+    name: 'twitter',
+    outlink: 'https://twitter.com/niludaizi',
   },
+  // {
+  //   icon: 'ri-mail-send-line',
+  //   name: 'mail',
+  //   outlink: 'xxxxxxx',
+  // },
   {
-    name: "Feed",
-    iconClass: "ri-lightbulb-flash-line",
-    href: "/feed/1",
+    icon: 'ri-github-fill',
+    name: 'github',
+    outlink: 'https://github.com/niludz',
   },
-  {
-    name: "Archive",
-    iconClass: "ri-archive-line",
-    href: "/archive/1",
-  },
-  {
-    name: "Message",
-    iconClass: "ri-chat-1-line",
-    href: "/message",
-  },
-  {
-    name: "Search",
-    iconClass: "ri-search-line",
-    href: "/search",
-  },
-  {
-    name: "More",
-    iconClass: "ri-more-fill",
-    href: "javascript:void(0);",
-    children: [
-      {
-        name: 'About',
-        iconClass: 'ri-information-line',
-        href: '/about',
-      },
-      {
-        name: 'Friends',
-        iconClass: 'ri-user-5-line',
-        href: '/friends',
-        target: '_self',
-      },
-    ]
-  }
 ]
 
 /**
