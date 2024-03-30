@@ -1,5 +1,5 @@
 ---
-title: 我理解的Javascript原型
+title: HTTP状态码与头部
 date: 2024-03-30
 category: 计算机网络
 tags: ["HTTP"]
