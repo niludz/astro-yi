@@ -11,7 +11,7 @@ mathjax: true
 
 ### 函数执行栈
 
-栈（stack）是一种**后进先出（LIFO，Last In First Out）**的线性数据结构。
+栈（stack）是一种**后进先出**（LIFO，Last In First Out）的线性数据结构。
 
 举例：
 
